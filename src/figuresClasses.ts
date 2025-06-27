@@ -23,7 +23,7 @@ export class Triangle implements Figure {
       .reduce((sum, num) => sum + num);
 
     if (largestSide >= sumOfOtherTwo) {
-      throw new Error(`error: one of the sides = 0`);
+      throw new Error(`error: sides ${a}, ${b} and ${c} can't form a triangle`);
     }
   }
 
